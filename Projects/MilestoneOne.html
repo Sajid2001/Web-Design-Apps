@@ -4,49 +4,66 @@
 <html>
   <head>
     <title>Milestone One Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleText.css">
   </head>
+
+<!-- IDEA: split the section class and the id -->
 
   <body>
 <header>
-
+<!-- IDEA: obligatory form HTML -->
   <div>
     <form>
       <input type="text" name="search" placeholder = "Search...">
       <input type="submit"value="Search">
     </form>
   </div>
-  <hr>
-  <h1> MileStone One Assignment</h1>
-  <hr>
+
+  <div class="header-image background-image-1">
+    <div class="header-text">
+      <h1> Milestone One Assignment</h1>
+    </div>
+  </div>
+
+
 </header>
 
-
-
+<!-- page menu -->
 <div>
   <h2>Page Menu</h2>
-
-  <nav>
-    <ul>
-      <li><a href="#Basic_Information">Basic Information</a></li>
-      <li><a href="#Education_Summary">Education Summary</a></li>
-      <li><a href="#Work_Experience">Work Experience</a></li>
-      <li><a href="#Programming_Skills">Programming Skills</a></li>
-      <li><a href="#General_Interests">General Interests</a></li>
-      <li><a href="#Favorite_Website">Favorite Website</a></li>
-      <li><a href="#My_Projects">My Projects</a></li>
-    </ul>
+  <nav class="menu_table">
+    <table>
+      <tr>
+        <th><a href="#Basic_Information">Basic Information</a><</th>
+        <th><a href="#Education_Summary">Education Summary</a> </th>
+        <th><a href="#Work_Experience">Work Experience</a></th>
+        <th><a href="#Programming_Skills">Programming Skills</a></th>
+        <th><a href="#General_Interests">General Interests</a></th>
+        <th><a href="#Favorite_Websites">Favorite Websites</a></th>
+        <th><a href="#My_Projects">My Projects</a></th>
+      </tr>
+    </table>
   </nav>
-
 </div>
 
-    <div class="Section" id="Basic_Information">
-        <h1> Basic Information </h1>
+
+<div class="header-image background-image-2">
+  <div class="header-text">
+    <h1>Basic Information</h1>
+  </div>
+</div>
+
+    <div class="Section custom-box" id="Basic_Information">
         <h2>Name: Sajid Syed</h2>
         <h2>Major: Computer Science</h2>
-        <h2 style="background-color:white;">Avatar:</h2>
+        <h2>Avatar:</h2>
         <img src="https://static.wikia.nocookie.net/chainsaw-man/images/d/df/EyepatchDenji.jpeg/revision/latest?cb=20210829215924" height="200">
-    </div>
+  </div>
 
+<!-- edu + work exp -->
     <div class="Section" id="Education_Summary">
         <h1> Education Summary </h1>
         <span>I am currently a Junior at St. John's University. As of now, I only have a high school diploma.</span>
@@ -60,7 +77,6 @@
     </div>
 
     <div class="Section" id="Programming_Skills">
-      <!-- IDEA: use flexbox here -->
         <h1> Programming Skills </h1>
         <ul>
           <li>Python</li>
@@ -80,18 +96,38 @@
         <p>Tldr, my favorite programming language is Alice.</p>
     </div>
 
+    <!-- general interests -->
+
+    <div class="header-image background-image-3">
+      <div class="header-text">
+        <h1> General Interests </h1>
+      </div>
+    </div>
+
     <div class="Section" id="General_Interests">
       <!-- IDEA: use grid here -->
-        <h1> General Interests </h1>
+
         <h2>General Hobbies</h2>
           <p> My hobbies consist of eating, sleeping, playing games, watching anime, reading manga, and showing up to class </p>
 
-          <figure>
-            <img src="https://external-preview.redd.it/JyVV5DgtU49IwsN5ibdL_OFTthSjdvBbxpRNAgc_Z-E.jpg?auto=webp&s=49caa347ed3a6eaa7babde0efc43ec640344db9c" width="40%">
-            <figcaption>Above. Berserk, my favorite manga series. Rest in Peace, Kentaro Miura</figcaption>
-          </figure>
 
+<!-- IDEA:
+        <div class="image-gallery">
+          <a href="https://external-preview.redd.it/JyVV5DgtU49IwsN5ibdL_OFTthSjdvBbxpRNAgc_Z-E.jpg?auto=webp&s=49caa347ed3a6eaa7babde0efc43ec640344db9c" class = img-1></a>
 
+          <a href="https://www.nintendo-insider.com/wp-content/uploads/2019/09/ai_the_somnium_files_key_art.jpg" class = img-2></a>
+
+          <a href="https://kodansha.us/wp-content/uploads/2020/12/ASilentVoice_Series_IMG_1200x960-1024x819.jpg" class = img-3></a>
+
+          <a href="https://i.redd.it/iighnff5s7w31.jpg" class = img-4></a>
+
+          <a href="https://i.imgur.com/97Lk6vx.jpg" class = img-5> </a>
+
+          <a href="https://static.wikia.nocookie.net/chainsaw-man/images/8/8b/Volume_10.jpg/revision/latest?cb=20201219102510" class = img-6> </a>
+        </div>
+-->
+
+        </div>
         <h2>Favorite Song</h2>
         <h3>Racing into the Night by Yoasobi</h3>
         <figure>
@@ -100,8 +136,15 @@
           I like how this song is a bop, but it also has depressing lyrics in it (and the music video is very depressing too).
         </figcaption>
       </figure>
+      </div>
 
-        <h2>Favorite Movie</h2>
+        <div class="header-image background-image-4">
+          <div class="header-text">
+            <h1>Favorite Movie</h1>
+          </div>
+        </div>
+
+        <div>
         <h3>I Want To Eat Your Pancreas</h3>
         <figure>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/MmoBvmJA9XI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -110,12 +153,22 @@
         </figcaption>
         </figure>
 
+
         <h3>Honorable Mention: Kara No Kyoukai 5: Infinite Spiral</h3>
         <figure>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/o3nYOOkXRfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </figure>
 
-      <h2>Favorite TV Show (anime)</h2>
+        </div>
+
+    <div class="header-image background-image-5">
+      <div class="header-text">
+        <h1>Favorite TV Show (anime)</h1>
+      </div>
+    </div>
+
+
+    <div>
       <h3>PsychoPass</h3>
       <figure>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/3BthsiGFe60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -124,42 +177,28 @@
         </figcaption>
       </figure>
 
-
     </div>
 
-    <div class="Section" id="Favorite_Websites">
-      <h2>Favorite Websites</h2>
-      <table>
-        <tr>
-          <th>Website Name</th>
-          <th>Link</th>
-        </tr>
-
-        <tr>
-          <td>
-            Youtube
-          </td>
-          <td>
-            <a href="https://www.youtube.com/" target="_blank">Click here to go to Youtube</a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            Discord
-          </td>
-          <td>
-            <a href="https://discord.com/" target="_blank">Click here to Discord</a>
-          </td>
-        </tr>
-
-      </table>
-
+    <div class="header-image background-image-6">
+      <div class="header-text">
+          <h1>Favorite Websites</h2>
+      </div>
     </div>
+
+    <span class="Section" id="Favorite_Websites">
+      <h2>Youtube.com</h3>
+      <p>I admit, I have some sort of addiction to Youtube</p>
+      <a href="https://www.youtube.com/" target="_blank">Link to YouTube</a>
+
+      <h2>Discord.com</h3>
+      <p>Same could be said about Discord</p>
+      <a href="https://discord.com/" target="_blank">Link to Discord</a>
+
+    </span>
 
   <div class="Section" id="My_Projects">
-    <h2>My Projects In This Course</h2>
-    <h3>To be filled later</h3>
+    <h1>My Projects In This Course</h2>
+    <h2>To be filled later</h3>
     <!-- <ol> </ol>  -->
   </div>
 
