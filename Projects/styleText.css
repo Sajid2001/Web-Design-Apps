@@ -1,0 +1,116 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 15px;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: #53b6cd;
+  color: lightgray;
+}
+
+h1{
+  color: lightblue;
+  text-align: center;
+}
+
+.header-image{
+  filter: grayscale(60%);
+  margin-top:40px;
+  margin-bottom:40px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 50%;
+}
+
+.header-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.menu_table> table
+{
+  margin-left: 22px;
+  border-width: 1px;
+  border-style: inset;
+  border-color: green;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.menu_table>table th{
+  border: 1px solid blue;
+  padding: 5px;
+  text-align: center;
+  background-color: lightblue
+}
+
+.menu_table>table th:hover{
+  background-color: #cfeef0
+}
+
+.custon-box{
+  text-align: left;
+  margin-right: 50%;
+  margin-left:30%;
+  height: 200px;
+  padding: 0 5px;
+  border: 3px;
+  border-color: darkblue;
+}
+
+.background-image-1{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://cdn.gamer-network.net/2016/usgamer/amano-header.jpg/EG11/thumbnail/1920x1080/format/jpg/quality/65/the-final-fantasist-a-conversation-with-yoshitaka-amano.jpg);
+}
+.background-image-2{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://dwgkfo5b3odmw.cloudfront.net/img/manga_series_header/791-WSJ2021_issue33_PageHeader_2000x800_OS.jpg);
+}
+.background-image-3{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://www.nintendo-insider.com/wp-content/uploads/2019/09/ai_the_somnium_files_key_art.jpg);
+}
+.background-image-4{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://static.tumblr.com/5cc7498ebc3a7dfabfd97868a7ef377e/axuz8rw/MvEpes65k/tumblr_static_-515546692-content_2048_v2.png);
+}
+.background-image-5{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://cdn3.whatculture.com/images/2021/05/7dbaa80de1007b75-600x338.jpg);
+}
+.background-image-6{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://api.time.com/wp-content/uploads/2017/10/websites.jpg?quality=85&w=1200&h=628&crop=1);
+}
+
+
+
+
+/* IDEA:
+.image-gallery{
+  display: grid;
+  grid-template-columns: 1fr,1fr,1fr,1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+}
+
+.image-gallery a{
+  width: 100%;
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
