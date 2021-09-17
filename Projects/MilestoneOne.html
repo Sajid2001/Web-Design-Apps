@@ -13,31 +13,29 @@
 <!-- IDEA: split the section class and the id -->
 
   <body>
-<header>
-<!-- IDEA: obligatory form HTML -->
-  <div>
-    <form>
-      <input type="text" name="search" placeholder = "Search...">
-      <input type="submit"value="Search">
-    </form>
-  </div>
+<header class="header-image background-image-1">
 
-  <div class="header-image background-image-1">
-    <div class="header-text">
-      <h1> Milestone One Assignment</h1>
-    </div>
-  </div>
 
+<div class="header-text">
+  <h1> Milestone One Assignment</h1>
+</div>
 
 </header>
 
+<div class="searchbar">
+  <form>
+    <input type="text" name="search" placeholder = "Search...">
+    <input type="submit"value="Search">
+  </form>
+</div>
+
 <!-- page menu -->
-<div>
+<div class="Centered">
   <h2>Page Menu</h2>
   <nav class="menu_table">
     <table>
       <tr>
-        <th><a href="#Basic_Information">Basic Information</a><</th>
+        <th><a href="#Basic_Information">Basic Information</a></th>
         <th><a href="#Education_Summary">Education Summary</a> </th>
         <th><a href="#Work_Experience">Work Experience</a></th>
         <th><a href="#Programming_Skills">Programming Skills</a></th>
@@ -50,84 +48,112 @@
 </div>
 
 
-<div class="header-image background-image-2">
-  <div class="header-text">
+<div class="heading-image background-image-2">
+  <div class="heading-text">
     <h1>Basic Information</h1>
   </div>
 </div>
 
-    <div class="Section custom-box" id="Basic_Information">
+    <div id="Basic_Information">
+      <div class="avatar-box">
         <h2>Name: Sajid Syed</h2>
         <h2>Major: Computer Science</h2>
-        <h2>Avatar:</h2>
-        <img src="Images/Avatar.jpg" height="200">
+        <h2>Age: 19</h2>
+        <img class="avatar" src="Images/Avatar.jpg" height="200">
+      </div>
+
+
+
   </div>
 
 <!-- edu + work exp -->
-    <div class="Section" id="Education_Summary">
+    <div id="Education_Summary">
         <h1> Education Summary </h1>
-        <span>I am currently a Junior at St. John's University. As of now, I only have a high school diploma.</span>
+        <div class="Centered">I am currently a Junior at St. John's University. As of now, I only have a high school diploma.</div>
     </div>
 
-    <div class="Section" id="Work_Experience">
+    <div id="Work_Experience">
         <h1> Work Experience </h1>
-        <ul>
-          <li> none </li>
-        </ul>
+        <div class="Centered">
+          <ul>
+            <li> none </li>
+          </ul>
+        </div>
     </div>
 
-    <div class="Section" id="Programming_Skills">
+    <div id="Programming_Skills">
         <h1> Programming Skills </h1>
-        <ul>
-          <li>Python</li>
-            <li style="margin-left:2em"> Some experience in high school</li>
-          <li>Java</li>
-            <li style="margin-left:2em"> Learned in freshman year</li>
-            <li style="margin-left:2em"> Completed Comp Sci levels one and two</li>
-          <li>C#</li>
-            <li style="margin-left:2em"> Used to make trashy Unity games</li>
-            <li style="margin-left:2em"> Haven't used it since last year</li>
-          <li>C++</li>
-            <li style="margin-left:2em"> Took a summer class for C++</li>
-            <li style="margin-left:2em"> Haven't used it in 3 years</li>
-            <li style="margin-left:2em"> The class was very boring</li>
-        </ul>
+        <div class="Centered">
+          <ul>
+            <li>Python</li>
+              <li style="margin-left:2em"> Some experience in high school</li>
+            <li>Java</li>
+              <li style="margin-left:2em"> Learned in freshman year</li>
+              <li style="margin-left:2em"> Completed Comp Sci levels one and two</li>
+            <li>C#</li>
+              <li style="margin-left:2em"> Used to make trashy Unity games</li>
+              <li style="margin-left:2em"> Haven't used it since last year</li>
+            <li>C++</li>
+              <li style="margin-left:2em"> Took a summer class for C++</li>
+              <li style="margin-left:2em"> Haven't used it in 3 years</li>
+              <li style="margin-left:2em"> The class was very boring</li>
+          </ul>
 
-        <p>Tldr, my favorite programming language is Alice.</p>
+          <p>Tldr, my favorite programming language is Alice.</p>
+        </div>
+
+
+
     </div>
 
     <!-- general interests -->
 
-    <div class="header-image background-image-3">
-      <div class="header-text">
+    <div class="heading-image background-image-3">
+      <div class="heading-text">
         <h1> General Interests </h1>
       </div>
     </div>
 
-    <div class="Section" id="General_Interests">
-      <!-- IDEA: use grid here -->
+  <div id="General_Interests">
 
-        <h2>General Hobbies</h2>
-          <p> My hobbies consist of eating, sleeping, playing games, watching anime, reading manga, and showing up to class </p>
+  <div class="Centered">
+  <h2>General Hobbies</h2>
+    <p> My hobbies consist of eating, sleeping, playing games, watching anime, reading manga, and showing up to class </p>
+
+  </div>
 
 
-<!-- IDEA:
-        <div class="image-gallery">
-          <a href="https://external-preview.redd.it/JyVV5DgtU49IwsN5ibdL_OFTthSjdvBbxpRNAgc_Z-E.jpg?auto=webp&s=49caa347ed3a6eaa7babde0efc43ec640344db9c" class = img-1></a>
 
-          <a href="https://www.nintendo-insider.com/wp-content/uploads/2019/09/ai_the_somnium_files_key_art.jpg" class = img-2></a>
+  <div class="gallery">
+    <figure class="gallery-item gallery-item-1">
+      <img src="https://kodansha.us/wp-content/uploads/2020/12/ASilentVoice_Series_IMG_1200x960-1024x819.jpg" class="gallery-img" >
+    </figure>
 
-          <a href="https://kodansha.us/wp-content/uploads/2020/12/ASilentVoice_Series_IMG_1200x960-1024x819.jpg" class = img-3></a>
+    <figure class="gallery-item gallery-item-2">
+      <img src="https://external-preview.redd.it/JyVV5DgtU49IwsN5ibdL_OFTthSjdvBbxpRNAgc_Z-E.jpg?auto=webp&s=49caa347ed3a6eaa7babde0efc43ec640344db9c" class="gallery-img" >
+    </figure>
 
-          <a href="https://i.redd.it/iighnff5s7w31.jpg" class = img-4></a>
+    <figure class="gallery-item gallery-item-3">
+      <img src="https://sm.ign.com/t/ign_za/articlepage/b/bloodborne/bloodborne-item-makes-the-game-harder-without-tell_gh5k.1280.jpg" class="gallery-img" >
+    </figure>
 
-          <a href="https://i.imgur.com/97Lk6vx.jpg" class = img-5> </a>
+    <figure class="gallery-item gallery-item-4">
+      <img src="https://static.wikia.nocookie.net/gintama/images/8/86/Gintama_Episode_52.png/revision/latest?cb=20130520105846" class="gallery-img" >
+    </figure>
 
-          <a href="https://static.wikia.nocookie.net/chainsaw-man/images/8/8b/Volume_10.jpg/revision/latest?cb=20201219102510" class = img-6> </a>
-        </div>
--->
+    <figure class="gallery-item gallery-item-5">
+      <img src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/28007909/85556e4020cb785b90a5b855d2f9dca4a5f9cc66.png" class="gallery-img" >
+    </figure>
 
-        </div>
+    <figure class="gallery-item gallery-item-6">
+      <img src="https://64.media.tumblr.com/1973ab0e1686de07224bbaafa69a19cf/729e025d18e9b289-e8/s1280x1920/43af13ce19f9c6094e7e20c46375f6f0fbb34c66.png" class="gallery-img" >
+    </figure>
+  </div>
+
+
+    </div>
+
+      <div class="Centered">
         <h2>Favorite Song</h2>
         <h3>Racing into the Night by Yoasobi</h3>
         <figure>
@@ -138,13 +164,14 @@
       </figure>
       </div>
 
-        <div class="header-image background-image-4">
-          <div class="header-text">
+
+        <div class="heading-image background-image-4">
+          <div class="heading-text">
             <h1>Favorite Movie</h1>
           </div>
         </div>
 
-        <div>
+        <div class = "Centered">
         <h3>I Want To Eat Your Pancreas</h3>
         <figure>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/MmoBvmJA9XI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -152,8 +179,9 @@
           This movie gives me pain.
         </figcaption>
         </figure>
+        </div>
 
-
+        <div class = "Centered">
         <h3>Honorable Mention: Kara No Kyoukai 5: Infinite Spiral</h3>
         <figure>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/o3nYOOkXRfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -161,14 +189,14 @@
 
         </div>
 
-    <div class="header-image background-image-5">
-      <div class="header-text">
+    <div class="heading-image background-image-5">
+      <div class="heading-text">
         <h1>Favorite TV Show (anime)</h1>
       </div>
     </div>
 
 
-    <div>
+    <div class="Centered">
       <h3>PsychoPass</h3>
       <figure>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/3BthsiGFe60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -176,30 +204,38 @@
           Mild spoilers in this video.
         </figcaption>
       </figure>
-
     </div>
 
-    <div class="header-image background-image-6">
-      <div class="header-text">
+    <div class="heading-image background-image-6">
+      <div class="heading-text">
           <h1>Favorite Websites</h2>
       </div>
     </div>
 
-    <span class="Section" id="Favorite_Websites">
-      <h2>Youtube.com</h3>
-      <p>I admit, I have some sort of addiction to Youtube</p>
-      <a href="https://www.youtube.com/" target="_blank">Link to YouTube</a>
+    <span id="Favorite_Websites">
+      <div class="Centered">
+        <div class="link-box">
+          <h2>Youtube.com</h3>
+          <p>I admit, I have some sort of addiction to Youtube</p>
+          <a href="https://www.youtube.com/" target="_blank">Link to YouTube</a>
+        </div>
+        <div class="link-box">
+          <h2>Discord.com</h3>
+          <p>Same could be said about Discord</p>
+          <a href="https://discord.com/" target="_blank">Link to Discord</a>
+        </div>
 
-      <h2>Discord.com</h3>
-      <p>Same could be said about Discord</p>
-      <a href="https://discord.com/" target="_blank">Link to Discord</a>
 
+      </div>
     </span>
 
-  <div class="Section" id="My_Projects">
-    <h1>My Projects In This Course</h2>
-    <h2>To be filled later</h3>
-    <!-- <ol> </ol>  -->
+  <div id="My_Projects">
+    <div class="Centered">
+      <h1>My Projects In This Course</h2>
+      <ul>
+        <li>To be filled later</li>
+      </ul>
+    </div>
   </div>
 
   </body>
