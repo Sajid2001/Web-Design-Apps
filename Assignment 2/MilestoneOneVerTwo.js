@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
 //are these methods in the right place?
   document.querySelector("#new-task").addEventListener('submit',addTask);
-
 })
+
 
 let tasks = [];
 
@@ -26,6 +26,13 @@ function addTask (ev) {
   ev.preventDefault();
 
   displayTasks();
+}
+
+function completeTask(title){
+
+  {alert('You have completed a task')}
+  removeTask(title);
+
 }
 
 function removeTask(title) {
@@ -53,18 +60,16 @@ function displayTasks(){
     let priority = tasks[i].priority;
 
     tasksView.innerHTML +=
-    `<div class="card mt-3" style = "width: 30rem">
-      <div class="card-body">
-      <div class=" form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-        <label class="card-title form-check-label" for="flexCheckIndeterminate">
-        ${title}
+    `<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <label>
+          <input id="task-status" type="checkbox" value="" onclick = "completeTask('${title}')">
+          ${title}
         </label>
-        </div>
-        <h6 class="card-subtitle mb-2 text-muted">${priority}</h6>
-        <p class="card-text">${description}</p>
-        <a href="#" onclick="removeTask('${title}')" class="btn btn-primary">Remove </a>
+        <small>${priority}</small>
       </div>
-    </div>`;
+      <p class="mb-1">${description}</p>
+      <a href="#" onclick="removeTask('${title}')" class="btn btn-danger">Remove</a>
+    </a>`;
   }
 }
