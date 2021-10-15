@@ -40,6 +40,8 @@ function removeTask(title) {
   displayTasks();
 }
 
+
+
 function displayTasks(){
 
   let tasksView = document.querySelector("#tasks_list");
@@ -51,9 +53,14 @@ function displayTasks(){
     let priority = tasks[i].priority;
 
     tasksView.innerHTML +=
-    `<div class="card">
+    `<div class="card mt-3" style = "width: 30rem">
       <div class="card-body">
-        <h5 class="card-title">${title}</h5>
+      <div class=" form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+        <label class="card-title form-check-label" for="flexCheckIndeterminate">
+        ${title}
+        </label>
+        </div>
         <h6 class="card-subtitle mb-2 text-muted">${priority}</h6>
         <p class="card-text">${description}</p>
         <a href="#" onclick="removeTask('${title}')" class="btn btn-primary">Remove </a>
