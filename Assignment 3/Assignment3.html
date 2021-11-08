@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script src="Assignment3.js"></script>
+
+    <meta charset="utf-8">
+    <title>Assignment 3</title>
+  </head>
+  <body>
+
+
+        <div id="question_widget">
+        </div>
+
+        <div id = "score_widget">
+        </div>
+
+
+
+  </body>
+
+<!-- IDEA: question templates -->
+
+<script id="intro" type="text/x-handlebars-template">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card-body">
+          <h4 class="card-title"> Welcome to this quiz. Get read you to bash your skull against a wall like there's no tomorrow</h4>
+          <p class="card-text">Because this quiz will make you realize you know nothing about comp sci. May your brain lose all of its functionality within 20 minutes</p>
+          <button data-action = "start_app" class= "btn btn-danger float-right"> Start </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+
+<script id = "scoreboard" type="text/x-handlebars-template">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card-body">
+          <h4 class="card-title">Current Score</h4>
+          <h5 class="card-text">{{this.current_score}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+
+  <script id="text_input_view" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="card-body">
+        <h4 class="card-title">Question {{number}}</h4>
+        <p class="card-text">{{questionText}}</p>
+      </div>
+      <!-- aks about using dataset for form-->
+      <form class="answer">
+        <div class="form-group">
+          <input id="text-input-answer" maxlength = "50" autocomplete = "off" class="form-control" type="text" placeholder="Write your response"required>
+        </div>
+      </form>
+      <button class="btn btn-danger float-right" data-action ="submit" name="button">Next Question</button>
+    </div>
+  </script>
+
+  <script id="true_false_view" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="card-body">
+        <h4 class="card-title">{{number}}</h4>
+        <p class="card-text">{{questionText}}</p>
+      </div>
+      <button class="btn btn-primary pull-left" data-action = "answer" data-vote="true">True</button>
+      <button  class="btn btn-danger float-right" data-action = "answer" data-vote="false">False</button>
+    </div>
+  </script>
+
+  <script id="multiple_choice_view" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="card-body">
+        <h4 class="card-title">Question {{number}}</h4>
+        <p class="card-text">{{description}}</p>
+      </div>
+
+      <div class="list-group" id = "choices">
+        <a href="#" class="btn btn-danger" data-vote = 1></a>
+        <a href="#" class="btn btn-danger" data-vote = 2></a>
+        <a href="#" class="btn btn-danger" data-vote = 3></a>
+        <a href="#" class="btn btn-danger" data-vote = 4></a>
+      </div>
+    </div>
+  </script>
+
+  <script id="multiple_choice-dual_images" type="text/x-handlebars-template">
+    <div class="container">
+          <img src="" alt="">
+          <img src= ${{imageUrl}} >
+          <h4 class = "card-title">${{description}}</h4>
+        </div>
+        <div class="list-group" id = "choices">
+          <a href="#" class="btn btn-danger" data-vote = 1></a>
+          <a href="#" class="btn btn-warning" data-vote = 2></a>
+          <a href="#" class="btn btn-primary" data-vote = 3></a>
+          <a href="#" class="btn btn--success" data-vote = 4></a>
+        </div>
+    </div>
+  </script>
+
+  <script id="end_view" type="text/x-handlebars-template">
+      <div class="container">
+        <div class="row">
+            <div class="col">
+              <div>
+                <span> Thank you for taking the quiz</span>
+                <button class="btn btn-danger float-right" data-action="start_again">Start Again</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </script>
+</html>
+
+
+</html>
